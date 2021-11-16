@@ -19,21 +19,10 @@ export function isSolved(tiles) {
   return true;
 }
 
-// export function getIndex(row, col, gridSize) {
-//   return parseInt(row, 10) * gridSize + parseInt(col, 10);
-// }
-
 export function getMatrixPosition(index, gridSize) {
   return {
     row: Math.floor(index / gridSize),
     col: index % gridSize,
-  };
-}
-
-export function getVisualPosition(row, col, dimensions) {
-  return {
-    x: col * dimensions,
-    y: row * dimensions,
   };
 }
 

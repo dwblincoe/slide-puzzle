@@ -1,5 +1,9 @@
 # Getting Started with Siding Puzzle
 
+### `git clone`
+
+    Clone the application to your machine
+
 ### `npm install`
 
     This will load all necessary third party modules that this app requires
@@ -14,4 +18,16 @@
 
     When you are in the game it displays the goal image and you can click start to shuffle the tiles.
 
-    At any time you can either click the Choose an image button to change images or click the reset button to reset to the first state where it shows you the goal image.
+    When you have started you can reset the image to its goal state and then click start to reshuffle.
+
+    At any time you can click "CHOOSE AN IMAGE" to select a new image and change the difficulty.
+
+# Changes if I had more time
+
+    1. If I had some more time I would implement a better theme for Material UI to make the style flow a bit better.
+
+    2. I could manage the tiles in the Context API instead of in the Board Component.
+
+    3. Implement some css to make the tiles slide into the empty space and look more appealing to the eye.
+
+    4. Of course come up with a better name!
