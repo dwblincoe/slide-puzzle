@@ -15,9 +15,9 @@ export const PuzzleProvider = (props) => {
   }, [gridSize]);
 
   const resetState = () => {
+    setIsStarted(false);
     setImageUrl(undefined);
     setGridSize(3);
-    setIsStarted(false);
   };
 
   const selectImage = (size) => {
