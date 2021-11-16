@@ -26,8 +26,12 @@
 
     1. If I had some more time I would implement a better theme for Material UI to make the style flow a bit better.
 
+    1. Use JSS instead of CSS.
+
     2. I could manage the tiles in the Context API instead of in the Board Component.
 
     3. Implement some css to make the tiles slide into the empty space and look more appealing to the eye.
 
-    4. Of course come up with a better name!
+    4. Clean up some code (put some inline styles that need to be moved to classes)
+
+    5. Of course come up with a better name!
