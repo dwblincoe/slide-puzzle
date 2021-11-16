@@ -34,9 +34,7 @@ const Tile = ({ tile, index, tiles, setTiles }) => {
         }% ${(100 / gridSize) * Math.floor(tile / gridSize)}%`,
       }}
       onClick={handleSwap}
-    >
-      {tileNumber}
-    </div>
+    ></div>
   );
 };
 
