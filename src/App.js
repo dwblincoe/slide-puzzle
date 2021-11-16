@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import { useContext } from 'react';
+
+import Board from './components/Board';
+import Startup from './components/Startup';
+
+import { PuzzleContext } from './common/PuzzleContext';
+
 import './App.css';
 
-function App() {
+const App = () => {
+  const { imageUrl, isStarted } = useContext(PuzzleContext);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Slide Puzzle</h1>
+      {imageUrl && isStarted ? <Board /> : <Startup />}
     </div>
   );
-}
+};
 
 export default App;

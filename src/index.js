@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { PuzzleProvider } from './common/PuzzleContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PuzzleProvider>
+      <App />
+    </PuzzleProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
